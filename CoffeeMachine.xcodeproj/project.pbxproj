@@ -13,6 +13,9 @@
 		A0AF32D42389B70A0048CE7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AF32D22389B70A0048CE7D /* Main.storyboard */; };
 		A0AF32D62389B70B0048CE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF32D52389B70B0048CE7D /* Assets.xcassets */; };
 		A0AF32D92389B70B0048CE7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AF32D72389B70B0048CE7D /* LaunchScreen.storyboard */; };
+		A0AF32E12389BFE70048CE7D /* CoffeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF32E02389BFE70048CE7D /* CoffeeVC.swift */; };
+		A0AF32E32389D4480048CE7D /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF32E22389D4480048CE7D /* CoffeeMachine.swift */; };
+		A0AF32E9238AEA6D0048CE7D /* ReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF32E8238AEA6D0048CE7D /* ReceiptVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A0AF32D52389B70B0048CE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0AF32D82389B70B0048CE7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0AF32DA2389B70B0048CE7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AF32E02389BFE70048CE7D /* CoffeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeVC.swift; sourceTree = "<group>"; };
+		A0AF32E22389D4480048CE7D /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		A0AF32E8238AEA6D0048CE7D /* ReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				A0AF32D52389B70B0048CE7D /* Assets.xcassets */,
 				A0AF32D72389B70B0048CE7D /* LaunchScreen.storyboard */,
 				A0AF32DA2389B70B0048CE7D /* Info.plist */,
+				A0AF32E02389BFE70048CE7D /* CoffeeVC.swift */,
+				A0AF32E22389D4480048CE7D /* CoffeeMachine.swift */,
+				A0AF32E8238AEA6D0048CE7D /* ReceiptVC.swift */,
 			);
 			path = CoffeeMachine;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AF32E32389D4480048CE7D /* CoffeeMachine.swift in Sources */,
+				A0AF32E9238AEA6D0048CE7D /* ReceiptVC.swift in Sources */,
 				A0AF32D12389B70A0048CE7D /* ViewController.swift in Sources */,
 				A0AF32CD2389B70A0048CE7D /* AppDelegate.swift in Sources */,
+				A0AF32E12389BFE70048CE7D /* CoffeeVC.swift in Sources */,
 				A0AF32CF2389B70A0048CE7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

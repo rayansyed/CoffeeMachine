@@ -9,10 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func startCoffee(){
+        openCoffeeScene()
+    }
+    
+    @IBAction func openManual(){
+        
+    }
+    
+    func openCoffeeScene(){
+        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let receiptVC = mainSB.instantiateViewController(withIdentifier: "CoffeeView") as! CoffeeVC
+        self.present(receiptVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(receiptVC, animated: true)
+        
+    }
+    
+    func openManualScene(){
+        
     }
 
 
