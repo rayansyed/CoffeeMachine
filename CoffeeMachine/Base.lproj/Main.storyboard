@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIb-4D-gK7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -10,47 +10,49 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coffee Machine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdd-lv-5PK">
-                                <rect key="frame" x="80" y="209" width="276" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coffee Machine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdd-lv-5PK">
+                                <rect key="frame" x="42" y="245" width="336" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="35"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gl2-If-CHN">
-                                <rect key="frame" x="118" y="375" width="179" height="41"/>
+                                <rect key="frame" x="121" y="330" width="179" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
                                 <state key="normal" title="Make Coffee">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="startCoffee" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCp-oW-QGT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUE-Fj-MDz">
-                                <rect key="frame" x="147" y="433" width="108" height="41"/>
+                                <rect key="frame" x="153" y="400" width="108" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
-                                <state key="normal" title="Manual"/>
+                                <state key="normal" title="Manual">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="openManual" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKl-H8-Omj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The perfect cup of joe everytime!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxP-BL-jSE">
-                                <rect key="frame" x="36" y="545" width="342" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The perfect cup of joe everytime!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxP-BL-jSE">
+                                <rect key="frame" x="72" y="779" width="271" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="23"/>
-                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="23"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -362,5 +364,119 @@
             </objects>
             <point key="canvasLocation" x="1637.68115942029" y="109.82142857142857"/>
         </scene>
+        <!--ManualVC-->
+        <scene sceneID="YMv-8N-OJ1">
+            <objects>
+                <viewController storyboardIdentifier="ManualView" id="8cw-3t-7E6" customClass="ManualVC" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ixe-lG-9bm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How it Works" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZj-pT-qXl">
+                                <rect key="frame" x="20" y="213" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A simple Coffee Machine App that gets the perfect cup of your favorite blend everytime." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmh-sQ-LaI">
+                                <rect key="frame" x="139" y="269" width="238" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JzH-BR-pzb">
+                                <rect key="frame" x="68" y="409" width="50" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="tXh-PR-iOp"/>
+                                </constraints>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Control the switchs to select prefered type of bean and water consistency" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NB-BR-Ggc">
+                                <rect key="frame" x="138" y="377" width="239" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OgO-vS-YxJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aFY-pa-t7S">
+                                <rect key="frame" x="21" y="516" width="94" height="33"/>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increament the desired sugar and or milk to preference or not add any if black is prefered" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bh-ug-wgZ">
+                                <rect key="frame" x="138" y="485" width="256" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="u26-T9-lgX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-VU-72J">
+                                <rect key="frame" x="20" y="618" width="111" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="GSE-VA-r0L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Brew Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit the brew button when finished and let the machine work its magic" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSe-ei-qJe">
+                                <rect key="frame" x="138" y="588" width="256" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="JhS-bR-C5D">
+                                <rect key="frame" x="35" y="279" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="52W-1i-YEy"/>
+                                    <constraint firstAttribute="width" constant="80" id="IaW-dK-RsP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JhS-bR-C5D" firstAttribute="centerY" secondItem="Gmh-sQ-LaI" secondAttribute="centerY" id="7Wj-8A-DWP"/>
+                            <constraint firstItem="JhS-bR-C5D" firstAttribute="centerX" secondItem="RnS-VU-72J" secondAttribute="centerX" id="8rj-Nj-GaD"/>
+                            <constraint firstItem="m71-gx-j4Z" firstAttribute="trailing" secondItem="1NB-BR-Ggc" secondAttribute="trailing" constant="37" id="AKH-Cu-Gss"/>
+                            <constraint firstItem="LSe-ei-qJe" firstAttribute="top" secondItem="8bh-ug-wgZ" secondAttribute="bottom" constant="8" id="Cvz-3g-B9e"/>
+                            <constraint firstItem="aFY-pa-t7S" firstAttribute="top" secondItem="JzH-BR-pzb" secondAttribute="bottom" constant="76" id="Egu-bX-gLX"/>
+                            <constraint firstItem="JzH-BR-pzb" firstAttribute="top" secondItem="JhS-bR-C5D" secondAttribute="bottom" constant="50" id="HHs-zd-8mL"/>
+                            <constraint firstItem="RnS-VU-72J" firstAttribute="centerY" secondItem="LSe-ei-qJe" secondAttribute="centerY" id="HXj-qJ-m8X"/>
+                            <constraint firstItem="8bh-ug-wgZ" firstAttribute="trailing" secondItem="LSe-ei-qJe" secondAttribute="trailing" id="I2J-ae-8gO"/>
+                            <constraint firstItem="JhS-bR-C5D" firstAttribute="trailing" secondItem="aFY-pa-t7S" secondAttribute="trailing" id="IGM-OL-WZm"/>
+                            <constraint firstItem="RnS-VU-72J" firstAttribute="top" secondItem="aFY-pa-t7S" secondAttribute="bottom" constant="70" id="II7-gB-snN"/>
+                            <constraint firstItem="JhS-bR-C5D" firstAttribute="top" secondItem="ixe-lG-9bm" secondAttribute="top" constant="279" id="JIC-0U-sYT"/>
+                            <constraint firstItem="hZj-pT-qXl" firstAttribute="leading" secondItem="m71-gx-j4Z" secondAttribute="leading" constant="20" id="MRo-AK-kwB"/>
+                            <constraint firstItem="LSe-ei-qJe" firstAttribute="leading" secondItem="RnS-VU-72J" secondAttribute="trailing" constant="8" id="Mio-jM-9bq"/>
+                            <constraint firstItem="8bh-ug-wgZ" firstAttribute="top" secondItem="1NB-BR-Ggc" secondAttribute="bottom" constant="8" id="QiJ-4R-eNT"/>
+                            <constraint firstItem="1NB-BR-Ggc" firstAttribute="leading" secondItem="8bh-ug-wgZ" secondAttribute="leading" id="RRh-Wg-Ntz"/>
+                            <constraint firstItem="m71-gx-j4Z" firstAttribute="trailing" secondItem="LSe-ei-qJe" secondAttribute="trailing" constant="20" id="SSv-LY-IDK"/>
+                            <constraint firstItem="1NB-BR-Ggc" firstAttribute="top" secondItem="Gmh-sQ-LaI" secondAttribute="bottom" constant="8" id="WVd-sZ-3gN"/>
+                            <constraint firstItem="1NB-BR-Ggc" firstAttribute="trailing" secondItem="Gmh-sQ-LaI" secondAttribute="trailing" id="YKS-Qd-ReG"/>
+                            <constraint firstItem="8bh-ug-wgZ" firstAttribute="leading" secondItem="LSe-ei-qJe" secondAttribute="leading" id="YVe-ol-8pM"/>
+                            <constraint firstItem="1NB-BR-Ggc" firstAttribute="top" secondItem="ixe-lG-9bm" secondAttribute="top" constant="377" id="Yjh-xN-OQY"/>
+                            <constraint firstItem="m71-gx-j4Z" firstAttribute="trailing" secondItem="hZj-pT-qXl" secondAttribute="trailing" constant="20" id="Yvr-DH-YfM"/>
+                            <constraint firstItem="8bh-ug-wgZ" firstAttribute="centerY" secondItem="aFY-pa-t7S" secondAttribute="centerY" id="fOk-4V-KAC"/>
+                            <constraint firstItem="RnS-VU-72J" firstAttribute="leading" secondItem="hZj-pT-qXl" secondAttribute="leading" id="hFB-ca-7z7"/>
+                            <constraint firstItem="JhS-bR-C5D" firstAttribute="leading" secondItem="m71-gx-j4Z" secondAttribute="leading" constant="35" id="hWm-WM-ull"/>
+                            <constraint firstItem="JzH-BR-pzb" firstAttribute="leading" secondItem="m71-gx-j4Z" secondAttribute="leading" constant="68" id="hm5-ak-rjo"/>
+                            <constraint firstItem="Gmh-sQ-LaI" firstAttribute="leading" secondItem="JhS-bR-C5D" secondAttribute="trailing" constant="24" id="nwk-0Y-jKE"/>
+                            <constraint firstItem="hZj-pT-qXl" firstAttribute="top" secondItem="m71-gx-j4Z" secondAttribute="top" constant="20" id="plW-0m-87w"/>
+                            <constraint firstItem="m71-gx-j4Z" firstAttribute="trailing" secondItem="8bh-ug-wgZ" secondAttribute="trailing" constant="20" id="tGK-LC-cpx"/>
+                            <constraint firstItem="JhS-bR-C5D" firstAttribute="top" secondItem="hZj-pT-qXl" secondAttribute="bottom" constant="18" id="tLh-wt-aZp"/>
+                            <constraint firstItem="1NB-BR-Ggc" firstAttribute="leading" secondItem="JzH-BR-pzb" secondAttribute="trailing" constant="22" id="vlE-rd-Ps6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m71-gx-j4Z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKC-Za-Ywk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2376.811594202899" y="109.82142857142857"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="900" height="1320"/>
+    </resources>
 </document>

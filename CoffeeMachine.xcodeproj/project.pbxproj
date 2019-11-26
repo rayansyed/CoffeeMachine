@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73A2267D238B10F90008AFDF /* ManualVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A2267C238B10F90008AFDF /* ManualVC.swift */; };
 		A0AF32CD2389B70A0048CE7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF32CC2389B70A0048CE7D /* AppDelegate.swift */; };
 		A0AF32CF2389B70A0048CE7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF32CE2389B70A0048CE7D /* SceneDelegate.swift */; };
 		A0AF32D12389B70A0048CE7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF32D02389B70A0048CE7D /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73A2267C238B10F90008AFDF /* ManualVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualVC.swift; sourceTree = "<group>"; };
 		A0AF32C92389B70A0048CE7D /* CoffeeMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF32CC2389B70A0048CE7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0AF32CE2389B70A0048CE7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				A0AF32E02389BFE70048CE7D /* CoffeeVC.swift */,
 				A0AF32E22389D4480048CE7D /* CoffeeMachine.swift */,
 				A0AF32E8238AEA6D0048CE7D /* ReceiptVC.swift */,
+				73A2267C238B10F90008AFDF /* ManualVC.swift */,
 			);
 			path = CoffeeMachine;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				A0AF32E32389D4480048CE7D /* CoffeeMachine.swift in Sources */,
 				A0AF32E9238AEA6D0048CE7D /* ReceiptVC.swift in Sources */,
+				73A2267D238B10F90008AFDF /* ManualVC.swift in Sources */,
 				A0AF32D12389B70A0048CE7D /* ViewController.swift in Sources */,
 				A0AF32CD2389B70A0048CE7D /* AppDelegate.swift in Sources */,
 				A0AF32E12389BFE70048CE7D /* CoffeeVC.swift in Sources */,

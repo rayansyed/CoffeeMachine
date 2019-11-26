@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openManual(){
-        
+        openManualScene()
     }
     
     func openCoffeeScene(){
@@ -34,7 +34,10 @@ class ViewController: UIViewController {
     }
     
     func openManualScene(){
-        
+        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let manualVC = mainSB.instantiateViewController(withIdentifier: "ManualView") as! ManualVC
+        self.present(manualVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(manualVC, animated: true)
     }
 
 
